@@ -1,11 +1,10 @@
-import { Inter } from 'next/font/google'
-
 import Link from 'next/link'
+
 import {MainLayout} from '../components/layouts/MainLayout'
 
-const inter = Inter({ subsets: ['latin'] })
 
-export default function HomePage({children}) {
+export default function HomePage() {
+
   return (
    <MainLayout>
       <h1>Home Page</h1>
@@ -18,8 +17,6 @@ export default function HomePage({children}) {
         Get started by editing{' '}
         <code className={'code'}>pages/index.js</code>
       </p>
-    
-
 
    </MainLayout>
   )
